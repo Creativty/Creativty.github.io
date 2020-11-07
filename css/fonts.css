@@ -1,0 +1,263 @@
+/* bellota-regular - latin */
+@font-face {
+    font-family: 'Bellota';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/bellota-v2-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Bellota Regular'), local('Bellota-Regular'),
+         url('./fonts/bellota-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/bellota-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/bellota-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/bellota-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/bellota-v2-latin-regular.svg#Bellota') format('svg'); /* Legacy iOS */
+}
+
+/* katibeh-regular - latin-ext_latin_arabic */
+@font-face {
+font-family: 'Katibeh';
+font-style: normal;
+font-weight: 400;
+src: url('./fonts/katibeh-v9-latin-ext_latin_arabic-regular.eot'); /* IE9 Compat Modes */
+src: local('Katibeh-Regular'),
+        url('./fonts/katibeh-v9-latin-ext_latin_arabic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/katibeh-v9-latin-ext_latin_arabic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/katibeh-v9-latin-ext_latin_arabic-regular.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/katibeh-v9-latin-ext_latin_arabic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/katibeh-v9-latin-ext_latin_arabic-regular.svg#Katibeh') format('svg'); /* Legacy iOS */
+}
+
+/* lalezar-regular - latin-ext_latin_arabic */
+@font-face {
+font-family: 'Lalezar';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/lalezar-v8-latin-ext_latin_arabic-regular.eot'); /* IE9 Compat Modes */
+src: local('Lalezar'), local('Lalezar-Regular'),
+        url('./fonts/lalezar-v8-latin-ext_latin_arabic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/lalezar-v8-latin-ext_latin_arabic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/lalezar-v8-latin-ext_latin_arabic-regular.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/lalezar-v8-latin-ext_latin_arabic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/lalezar-v8-latin-ext_latin_arabic-regular.svg#Lalezar') format('svg'); /* Legacy iOS */
+}
+
+/* markazi-text-regular - latin-ext_latin_arabic */
+@font-face {
+font-family: 'Markazi Text';
+font-style: normal;
+font-weight: 400;
+src: url('./fonts/markazi-text-v12-latin-ext_latin_arabic-regular.eot'); /* IE9 Compat Modes */
+src: local(''),
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-regular.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-regular.svg#MarkaziText') format('svg'); /* Legacy iOS */
+}
+@font-face {
+font-family: 'Markazi Text';
+font-style: normal;
+font-weight: 600;
+src: url('./fonts/markazi-text-v12-latin-ext_latin_arabic-600.eot'); /* IE9 Compat Modes */
+src: local(''),
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-600.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-600.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-600.svg#MarkaziText') format('svg'); /* Legacy iOS */
+}
+@font-face {
+font-family: 'Markazi Text';
+font-style: normal;
+font-weight: 500;
+src: url('./fonts/markazi-text-v12-latin-ext_latin_arabic-500.eot'); /* IE9 Compat Modes */
+src: local(''),
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-500.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-500.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-500.svg#MarkaziText') format('svg'); /* Legacy iOS */
+}
+@font-face {
+font-family: 'Markazi Text';
+font-style: normal;
+font-weight: 700;
+src: url('./fonts/markazi-text-v12-latin-ext_latin_arabic-700.eot'); /* IE9 Compat Modes */
+src: local(''),
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-700.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/markazi-text-v12-latin-ext_latin_arabic-700.svg#MarkaziText') format('svg'); /* Legacy iOS */
+}
+
+/* rowdies-300 - latin-ext_latin */
+@font-face {
+    font-family: 'Rowdies';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/rowdies-v2-latin-ext_latin-300.eot'); /* IE9 Compat Modes */
+    src: local('Rowdies Light'), local('Rowdies-Light'),
+         url('./fonts/rowdies-v2-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/rowdies-v2-latin-ext_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/rowdies-v2-latin-ext_latin-300.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/rowdies-v2-latin-ext_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/rowdies-v2-latin-ext_latin-300.svg#Rowdies') format('svg'); /* Legacy iOS */
+  }
+/* rowdies-700 - latin-ext_latin */
+@font-face {
+font-family: 'Rowdies';
+font-style: normal;
+font-weight: 700;
+src: url('./fonts/rowdies-v2-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
+src: local('Rowdies Bold'), local('Rowdies-Bold'),
+        url('./fonts/rowdies-v2-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/rowdies-v2-latin-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/rowdies-v2-latin-ext_latin-700.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/rowdies-v2-latin-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/rowdies-v2-latin-ext_latin-700.svg#Rowdies') format('svg'); /* Legacy iOS */
+}
+/* rowdies-regular - latin-ext_latin */
+@font-face {
+font-family: 'Rowdies';
+font-style: normal;
+font-weight: 400;
+src: url('./fonts/rowdies-v2-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+src: local('Rowdies Regular'), local('Rowdies-Regular'),
+        url('./fonts/rowdies-v2-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/rowdies-v2-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/rowdies-v2-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/rowdies-v2-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/rowdies-v2-latin-ext_latin-regular.svg#Rowdies') format('svg'); /* Legacy iOS */
+}
+
+/* sen-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/sen-v2-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Sen Regular'), local('Sen-Regular'),
+         url('./fonts/sen-v2-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/sen-v2-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/sen-v2-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/sen-v2-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/sen-v2-latin-ext_latin-regular.svg#Sen') format('svg'); /* Legacy iOS */
+  }
+/* sen-800 - latin-ext_latin */
+@font-face {
+font-family: 'Sen';
+font-style: normal;
+font-weight: 800;
+src: url('./fonts/sen-v2-latin-ext_latin-800.eot'); /* IE9 Compat Modes */
+src: local('Sen ExtraBold'), local('Sen-ExtraBold'),
+        url('./fonts/sen-v2-latin-ext_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/sen-v2-latin-ext_latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/sen-v2-latin-ext_latin-800.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/sen-v2-latin-ext_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/sen-v2-latin-ext_latin-800.svg#Sen') format('svg'); /* Legacy iOS */
+}
+/* sen-700 - latin-ext_latin */
+@font-face {
+font-family: 'Sen';
+font-style: normal;
+font-weight: 700;
+src: url('./fonts/sen-v2-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
+src: local('Sen Bold'), local('Sen-Bold'),
+        url('./fonts/sen-v2-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/sen-v2-latin-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/sen-v2-latin-ext_latin-700.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/sen-v2-latin-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/sen-v2-latin-ext_latin-700.svg#Sen') format('svg'); /* Legacy iOS */
+}
+
+/* tajawal-200 - latin_arabic */
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/tajawal-v3-latin_arabic-200.eot'); /* IE9 Compat Modes */
+    src: local('Tajawal ExtraLight'), local('Tajawal-ExtraLight'),
+         url('./fonts/tajawal-v3-latin_arabic-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/tajawal-v3-latin_arabic-200.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/tajawal-v3-latin_arabic-200.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/tajawal-v3-latin_arabic-200.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/tajawal-v3-latin_arabic-200.svg#Tajawal') format('svg'); /* Legacy iOS */
+  }
+/* tajawal-300 - latin_arabic */
+@font-face {
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 300;
+src: url('./fonts/tajawal-v3-latin_arabic-300.eot'); /* IE9 Compat Modes */
+src: local('Tajawal Light'), local('Tajawal-Light'),
+        url('./fonts/tajawal-v3-latin_arabic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/tajawal-v3-latin_arabic-300.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-300.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/tajawal-v3-latin_arabic-300.svg#Tajawal') format('svg'); /* Legacy iOS */
+}
+/* tajawal-regular - latin_arabic */
+@font-face {
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 400;
+src: url('./fonts/tajawal-v3-latin_arabic-regular.eot'); /* IE9 Compat Modes */
+src: local('Tajawal'), local('Tajawal-Regular'),
+        url('./fonts/tajawal-v3-latin_arabic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/tajawal-v3-latin_arabic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-regular.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/tajawal-v3-latin_arabic-regular.svg#Tajawal') format('svg'); /* Legacy iOS */
+}
+/* tajawal-700 - latin_arabic */
+@font-face {
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 700;
+src: url('./fonts/tajawal-v3-latin_arabic-700.eot'); /* IE9 Compat Modes */
+src: local('Tajawal Bold'), local('Tajawal-Bold'),
+        url('./fonts/tajawal-v3-latin_arabic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/tajawal-v3-latin_arabic-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-700.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/tajawal-v3-latin_arabic-700.svg#Tajawal') format('svg'); /* Legacy iOS */
+}
+/* tajawal-500 - latin_arabic */
+@font-face {
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 500;
+src: url('./fonts/tajawal-v3-latin_arabic-500.eot'); /* IE9 Compat Modes */
+src: local('Tajawal Medium'), local('Tajawal-Medium'),
+        url('./fonts/tajawal-v3-latin_arabic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/tajawal-v3-latin_arabic-500.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-500.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/tajawal-v3-latin_arabic-500.svg#Tajawal') format('svg'); /* Legacy iOS */
+}
+/* tajawal-800 - latin_arabic */
+@font-face {
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 800;
+src: url('./fonts/tajawal-v3-latin_arabic-800.eot'); /* IE9 Compat Modes */
+src: local('Tajawal ExtraBold'), local('Tajawal-ExtraBold'),
+        url('./fonts/tajawal-v3-latin_arabic-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/tajawal-v3-latin_arabic-800.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-800.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-800.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/tajawal-v3-latin_arabic-800.svg#Tajawal') format('svg'); /* Legacy iOS */
+}
+/* tajawal-900 - latin_arabic */
+@font-face {
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 900;
+src: url('./fonts/tajawal-v3-latin_arabic-900.eot'); /* IE9 Compat Modes */
+src: local('Tajawal Black'), local('Tajawal-Black'),
+        url('./fonts/tajawal-v3-latin_arabic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/tajawal-v3-latin_arabic-900.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-900.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/tajawal-v3-latin_arabic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/tajawal-v3-latin_arabic-900.svg#Tajawal') format('svg'); /* Legacy iOS */
+}

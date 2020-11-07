@@ -1,0 +1,103 @@
+body {
+    font-family: 'Bellota', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* SIDEBAR and it's TOGGLES (open and close) */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #121211;
+    overflow-x: hidden;
+    transition: 500ms;
+    padding-top:60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b3b3b3;
+    display: block;
+    transition: 300ms;
+}
+
+.sidebar a:hover {
+    color: #FFFCFF;
+}
+
+.sidebar .sidebar-close {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidebar-open {
+    position: fixed;
+    bottom: 14px;
+    left: 14px;
+    font-size: 28px;
+    padding: 1px 6px; 
+    margin: 0;
+    background: #121211;
+    color: #FFFCFF;
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: 300ms;
+}
+
+.sidebar-open:hover {
+    opacity: 1;
+}
+
+.sidebar hr {
+    margin: 32px 0px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .sidebar hr {margin: 16px 0;}
+}
+
+/* APP */
+#app {
+    transition: margin-left 500ms;
+    background-color: #1E1E1E;
+    color: #f6f6f6;
+    height: 100%;
+    min-height: 100vh;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#home .home-title {
+    text-align: center;
+    width: 100%;
+    height: min-content;
+    background: linear-gradient(0deg, rgba(22, 15, 15, 0.9), rgba(22, 15, 15, 0.9)), url('./images/alfons-morales-YLSwjSy7stw-unsplash.jpg');
+    background-position: center;
+}
+
+#home .slide {
+    height: 20%;
+    min-height: 320px;
+}
+
+#home .slide-title {
+    font-size: 30px;
+    margin-left: 1em;
+}
