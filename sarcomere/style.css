@@ -1,0 +1,102 @@
+/*
+    Made by: Abderahim Indjaren.
+    Class: 2BAC SC PC FR 1
+*/
+
+/* bodoni-moda-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/bodoni-moda-v1-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-regular.svg#BodoniModa') format('svg'); /* Legacy iOS */
+  }
+  /* bodoni-moda-600 - latin-ext_latin */
+  @font-face {
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/bodoni-moda-v1-latin-ext_latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-600.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-600.svg#BodoniModa') format('svg'); /* Legacy iOS */
+  }
+  /* bodoni-moda-800 - latin-ext_latin */
+  @font-face {
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./fonts/bodoni-moda-v1-latin-ext_latin-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-800.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-800.svg#BodoniModa') format('svg'); /* Legacy iOS */
+  }
+  /* bodoni-moda-900 - latin-ext_latin */
+  @font-face {
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/bodoni-moda-v1-latin-ext_latin-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-900.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/bodoni-moda-v1-latin-ext_latin-900.svg#BodoniModa') format('svg'); /* Legacy iOS */
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #141718;
+    margin: 0;
+    font-family: 'Bodoni Moda';
+}
+
+#title {
+    color: #fefefe;
+}
+
+#selection-description {
+    align-self: center;
+    width: 50vw;
+    color: white;
+    height: 25vh;
+    margin: 32px 32px 16px 32px;
+    border: 2px solid #414147;
+    background-color: #414147;
+    padding: 1% 5%;
+    border-radius: 64px;
+    font-size: 1.33em;
+}
+
+#canvas-container {
+    margin: 0;
+    padding: 0;
+    width: min-content;
+    align-self: center;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    margin: 0;
+    padding: 0;
+    height: 460px;
+    cursor: crosshair;
+}
