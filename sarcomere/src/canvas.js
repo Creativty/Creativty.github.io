@@ -59,10 +59,6 @@ canvas.addEventListener("click", function(evt) {
             nameElement.innerText = "Stries Z";
             descriptionElement.innerHTML = "Delimiteur entre les sarcomères...";
             break;
-    
-        default:
-            alert('Error');
-            break;
     }
 });
 
