@@ -64,6 +64,7 @@ body {
     background-color: #141718;
     margin: 0;
     font-family: 'Bodoni Moda';
+    overflow: hidden;
 }
 
 #title {
@@ -89,14 +90,46 @@ body {
     width: min-content;
     align-self: center;
     width: 100vw;
+    min-width: 500px;
     height: 50vh;
+    min-height: 400px;
     display: flex;
     justify-content: center;
 }
-
+#mobile-error {
+    display: hidden;
+}
 canvas {
     margin: 0;
     padding: 0;
     height: 460px;
     cursor: crosshair;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    title {
+        display: none;
+    }
+    #selection-description {
+        display: none;
+    }
+    canvas {
+        display: none;
+    }
+    #mobile-error {
+        display: block;
+        font-weight: 900;
+        color: #ffaaaa;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    #selection-description {
+        width: 90vw;
+        height: fit-content;
+    }
 }
