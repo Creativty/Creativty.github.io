@@ -6,10 +6,10 @@ import {getMousePosition, positionInRectangle} from './Helper.js';
 import { FilamentActine, FilamentMyosine, StrieZ } from './SchemaComponents.js';
 
 const canvas = document.getElementById("canvas");
+let context = canvas.getContext('2d');
 
-const context = canvas.getContext('2d');
-const canvasWidth = canvas.width;
-const canvasHeight = canvas.height;
+let canvasWidth = canvas.width;
+let canvasHeight = canvas.height;
 
 const bgColour = "#424242";
 
@@ -19,23 +19,79 @@ var mousePosition = {
     y: 0
 };
 
-let strieRight = new StrieZ(context,canvasWidth/2 - 203, canvasHeight/2 - 64, "#f5a316", 1, 5, 4);
-let strieLeft = new StrieZ(context,canvasWidth/2 + 203, canvasHeight/2 - 64, "#f5a316", -1, 5, 4);
+let canvasDefaultHeight = 460;
 
-let actineRight = new FilamentActine(context, canvasWidth/2 - 200, canvasHeight/2 - 128, "#f5a316", 1, 5, 5);
-let actineLeft = new FilamentActine(context, canvasWidth/2 + 200, canvasHeight/2 - 128, "#f5a316",-1, 5, 5);
-
-let myosine = new FilamentMyosine(context, canvasWidth/2, canvasHeight/2 - 96, "#89f516", 8, 4, 256);
-
-RenderableArray.push(strieRight);
-RenderableArray.push(strieLeft);
-RenderableArray.push(actineRight);
-RenderableArray.push(actineLeft);
-RenderableArray.push(myosine);
-
+let strieRight, strieLeft, actineRight, actineLeft, myosine;
+RenderableArray = [];
+    
+    canvas.width = window.innerWidth;
+    //canvas.height = (canvasDefaultHeight/540)*canvas.width;
+    canvasWidth = canvas.width;
+    context = canvas.getContext('2d');
+    strieRight = new StrieZ(context, canvasWidth/2 - canvasWidth*(canvasDefaultHeight/540)/2.25, canvasHeight/2 - 24*3, "#f5a316", 1, 3, 3, 16, (canvasDefaultHeight/540) * 48);
+    strieLeft = new StrieZ(context, canvasWidth/2 + canvasWidth*(canvasDefaultHeight/540)/2.25, canvasHeight/2 - 24*3, "#f5a316", -1, 3, 3, 16, (canvasDefaultHeight/540) * 48);
+    RenderableArray.push(strieRight);
+    RenderableArray.push(strieLeft);
+    actineRight = new FilamentActine(context, canvasWidth/2 - canvasWidth*(canvasDefaultHeight/540)/2.25 + 3, canvasHeight/ + 24*6 + 24*0.1, "#f5a316", 1, 3, 4, (canvasWidth/4)*(canvasDefaultHeight/540), (canvasDefaultHeight/540)*48);
+    actineLeft = new FilamentActine(context, canvasWidth/2 + canvasWidth*(canvasDefaultHeight/540)/2.25 - 3, canvasHeight/ + 24*6 + 24*0.1, "#f5a316", -1, 3, 4, canvasWidth/4, (canvasDefaultHeight/540)*48);
+    RenderableArray.push(actineRight);
+    RenderableArray.push(actineLeft);
+    myosine = new FilamentMyosine(context, canvasWidth/2, canvasHeight/2 - 20 - 24*3 , "#89f516", 6, 3, (canvasWidth/540) * 256, (canvasDefaultHeight/540)*48);
+    RenderableArray.push(myosine);
+/*
+*/
 const nameElement = document.getElementById("name-description");
 const descriptionElement = document.getElementById("description")
 
+window.resizeResponsive = function () {
+    RenderableArray = [];
+    
+    canvas.width = window.innerWidth;
+    //canvas.height = (canvasDefaultHeight/540)*canvas.width;
+    canvasWidth = canvas.width;
+    context = canvas.getContext('2d');
+    strieRight = new StrieZ(context, canvasWidth/2 - canvasWidth*(canvasDefaultHeight/540)/2.25, canvasHeight/2 - 24*3, "#f5a316", 1, 3, 3, 16, (canvasDefaultHeight/540) * 48);
+    strieLeft = new StrieZ(context, canvasWidth/2 + canvasWidth*(canvasDefaultHeight/540)/2.25, canvasHeight/2 - 24*3, "#f5a316", -1, 3, 3, 16, (canvasDefaultHeight/540) * 48);
+    RenderableArray.push(strieRight);
+    RenderableArray.push(strieLeft);
+    actineRight = new FilamentActine(context, canvasWidth/2 - canvasWidth*(canvasDefaultHeight/540)/2.25 + 3, canvasHeight/ + 24*6 + 24*0.1, "#f5a316", 1, 3, 4, (canvasWidth/4)*(canvasDefaultHeight/540), (canvasDefaultHeight/540)*48);
+    actineLeft = new FilamentActine(context, canvasWidth/2 + canvasWidth*(canvasDefaultHeight/540)/2.25 - 3, canvasHeight/ + 24*6 + 24*0.1, "#f5a316", -1, 3, 4, canvasWidth/4, (canvasDefaultHeight/540)*48);
+    RenderableArray.push(actineRight);
+    RenderableArray.push(actineLeft);
+    myosine = new FilamentMyosine(context, canvasWidth/2, canvasHeight/2 - 20 - 24*3 , "#89f516", 6, 3, (canvasWidth/540) * 256, (canvasDefaultHeight/540)*48);
+    RenderableArray.push(myosine);
+
+    
+    /*
+    if (window.innerWidth < 500) {
+        canvas.width = window.innerWidth;
+        //canvas.height = (canvasDefaultHeight/540)*canvas.width;
+        canh = canvas.width;
+        context = canvas.getContext('2d');
+        strieRight = new StrieZ(context, canvasWidth/2 - canvasWidth*(canvasDefaultHeight/540)/2.25, canvasHeight/2 - 24*3, "#f5a316", 1, 3, 3, 16, (canvasDefaultHeight/540) * 48);
+        strieLeft = new StrieZ(context, canvasWidth/2 + canvasWidth*(canvasDefaultHeight/540)/2.25, canvasHeight/2 - 24*3, "#f5a316", -1, 3, 3, 16, (canvasDefaultHeight/540) * 48);
+        RenderableArray[0] = strieRight;
+        RenderableArray[1] = strieLeft;
+    } else {
+        strieRight = new StrieZ(context,canvasWidth/2 - 200, canvasHeight/2 - 65, "#f5a316", 1, 5, 4);
+        strieLeft = new StrieZ(context,canvasWidth/2 + 200, canvasHeight/2 - 65, "#f5a316", -1, 5, 4);
+
+        actineRight = new FilamentActine(context, canvasWidth/2 - 200, canvasHeight/2 - 128, "#f5a316", 1, 5, 5);
+        actineLeft = new FilamentActine(context, canvasWidth/2 + 200, canvasHeight/2 - 128, "#f5a316",-1, 5, 5);
+
+        myosine = new FilamentMyosine(context, canvasWidth/2, canvasHeight/2 - 96, "#89f516", 8, 4, 256);
+        RenderableArray[0] = strieRight;
+        RenderableArray[1] = strieLeft;
+        RenderableArray[2] = actineRight;
+        RenderableArray[3] = actineLeft;
+        RenderableArray[4] = myosine;
+    }
+    */
+};
+
+window.addEventListener("resize", function(evt) {
+    resizeResponsive();
+});
 
 document.addEventListener("mousemove", function(evt) {
     mousePosition = getMousePosition(canvas, evt);

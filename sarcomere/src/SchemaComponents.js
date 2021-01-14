@@ -92,9 +92,10 @@ export class FilamentMyosine extends RenderableObject {
                     ctx.stroke();
 
                     ctx.beginPath();
-                    let radiusY = filamentWidth/32;
-                    ctx.ellipse(this.x - ((filamentWidth/2) * side), this.y + (strokeHeight * i) - 8, filamentWidth/12, radiusY, side*((Math.PI / 2)*1/5), 0, 2 * Math.PI, false);
-                    ctx.ellipse(this.x - ((filamentWidth/2) * side), this.y + (strokeHeight * i) + 8, filamentWidth/12, radiusY, -side*((Math.PI / 2)*1/5), 0, 2 * Math.PI, false);
+                    let radiusY = Math.min(filamentWidth/32, 8);
+                    let radiusX = Math.min(filamentWidth/16, 8);
+                    ctx.ellipse(this.x - ((filamentWidth/2) * side), this.y + (strokeHeight * i) +6, radiusX, radiusX, side*((Math.PI / 2)*1/5), 0, 2 * Math.PI, false);
+                    ctx.ellipse(this.x - ((filamentWidth/2) * side), this.y + (strokeHeight * i) -6, radiusX, radiusX, -side*((Math.PI / 2)*1/5), 0, 2 * Math.PI, false);
                     ctx.fillStyle = color;
                     ctx.fill();
                 }
